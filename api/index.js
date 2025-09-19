@@ -32,7 +32,7 @@ const log = (message, type = 'INFO') => {
 };
 
 // Function to check the target website
-const checkWebsite = async (targetUrl = 'http://localhost:3000') => {
+const checkWebsite = async (targetUrl = 'https://n8n-t6ib.onrender.com/') => {
   try {
     const startTime = Date.now();
     const response = await axios.get(targetUrl, {
@@ -155,4 +155,5 @@ export default async function handler(req, res) {
       message: error.message 
     });
   }
+
 }
