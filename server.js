@@ -4,7 +4,7 @@ const cron = require('node-cron');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const TARGET_URL = 'http://localhost:3000';
+const TARGET_URL = 'https://n8n-t6ib.onrender.com/';
 
 // Middleware
 app.use(express.json());
@@ -155,3 +155,4 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
